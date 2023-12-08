@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+
+<body>
+    <div class="ligtas-banko">
+        <div class="div">
+            <div class="overlap">
+                <img class="banking-application" src="{{ url_for('static', filename='img/banking-application-promotion-facebook-cover-4-1.png') }}" />
+                <img class="img" src="{{ url_for('static', filename='img/banking-application-promotion-facebook-cover-4-3.png') }}" />
+                <p class="at-ligtasbanko-we">
+                    At LigtasBanko, we believe that every Filipino bank user deserves to be protected from the dangers of
+                    phishing scams. We are dedicated to providing the most advanced and effective URL phishing detection
+                    solutions, ensuring that our users can bank safely and confidently in the digital world.<br /><br />Join us
+                    in our mission to safeguard Filipino bank users and create a safer, more secure online banking experience
+                    for all.
+                </p>
+            </div>
+            <div class="overlap-group">
+                <img class="banking-application-2" src="{{ url_for('static', filename='img/banking-application-promotion-facebook-cover-5-2.png') }}" />
+                <div class="checker">
+                    <img class="banking-application-3" src="{{ url_for('static', filename='img/banking-application-promotion-facebook-cover-4-2.png') }}" />
+                    <div class="text-wrapper">Enter URL:</div>
+                    <form action="/predict" method="post" onsubmit="submitForm(event)" autocomplete="off">
+                        <div class="rectangle">
+                            <input type="text" name="url" id="url-input" class="url-input" placeholder="" />
+                        </div>
+                        <!-- Display the prediction result below the rectangle -->
+                        <div class="prediction-result">
+                            {% if prediction %}
+                                <p class="{{ 'safe' if prediction == 'SAFE' else 'phishing' }}">{{ prediction }}</p>
+                            {% else %}
+                                <p class="empty-input-message" style="color: black;"></p>
+                            {% endif %}
+                        </div>
+                        <!-- Display the top features below the rectangle -->
+                        <div class="top-features">
+                          {% if top_features %}
+                            <p>Top Features:</p>
+                            <ul>
+                              {% for feature, importance in top_features.items() %}
+                                <li>{{ feature }}: {{ importance }}</li>
+                              {% endfor %}
+                            </ul>
+                          {% endif %}
+                        </div>
+                        <div class="group">
+                            <!-- Change the following lines from <div> to <button> and include both classes -->
+                            <button type="submit" class="div-wrapper text-wrapper-2">SUBMIT</button>
+                        </div>
+                    </form>
+                    <div class="clear" onclick="clearForm()">
+                        <div class="overlap-2">
+                            <div class="group-2"><div class="text-wrapper-3">Clear</div></div>
+                            <div class="group-3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlap-wrapper">
+                    <div class="overlap-3">
+                        <div class="text-wrapper-4">Powered by</div>
+                        <img class="banking-application-4" src="{{ url_for('static', filename='img/banking-application-promotion-facebook-cover-4-1-1.png') }}" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+      function submitForm(event) {
+          var urlInput = document.getElementById('url-input');
+          var predictionResult = document.querySelector('.prediction-result p');
+          var topFeaturesElement = document.querySelector('.top-features');
+  
+          if (urlInput.value.trim() === '') {
+              // Clear the previous output
+              predictionResult.textContent = '';
+              topFeaturesElement.innerHTML = '';
+  
+              // Display a message if the input is empty
+              predictionResult.textContent = 'Please input a URL.';
+              predictionResult.style.color = 'black'; // Set the color to black
+              event.preventDefault(); // Prevent form submission
+          } else {
+              // Clear the prediction result and top features if not empty
+              predictionResult.textContent = '';
+              topFeaturesElement.innerHTML = '';
+          }
+      }
+  
+      function clearForm() {
+          var urlInput = document.getElementById('url-input');
+          var predictionResult = document.querySelector('.prediction-result p');
+          var topFeaturesElement = document.querySelector('.top-features');
+  
+          // Clear the input box and related elements
+          urlInput.value = '';
+          predictionResult.textContent = '';
+          topFeaturesElement.innerHTML = '';
+      }
+  </script>
+</body>
+
+</html>

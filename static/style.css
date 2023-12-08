@@ -1,0 +1,322 @@
+.ligtas-banko {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden; /* Add this line to hide overflow */
+}
+
+.ligtas-banko .div {
+  background-color: rgba(255, 255, 255, 1);
+  background: linear-gradient(180deg, rgb(244.26, 250.61, 255) 57.29%, rgb(196.48, 215.61, 228.86) 100%);
+  width: 2250px;
+  height: 2050px;
+  position: relative;
+}
+
+.ligtas-banko .overlap {
+  position: absolute;
+  width: 1920px;
+  height: 969px;
+  top: 0;
+  left: 0;
+}
+
+.ligtas-banko .banking-application {
+  position: absolute;
+  width: 1000px;  /* Adjusted width value */
+  height: 600px; /* Adjusted height value */
+  top: -50px;
+  left: 0px;
+  object-fit: contain;
+}
+
+.ligtas-banko .img {
+  position: absolute;
+  width: 586px;
+  height: 969px;
+  top: -40px;
+  left: 1330px;
+  object-fit: cover;
+}
+
+.ligtas-banko .at-ligtasbanko-we {
+  position: absolute;
+  width: 1025px;
+  top: 250px;
+  left: 24%;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 1.92px;
+  line-height: 55px;
+}
+
+.ligtas-banko .overlap-group {
+  position: absolute;
+  width: 1403px;
+  height: 1201px;
+  top: 1087px;
+  left: 0;
+}
+
+.ligtas-banko .banking-application-2 {
+  position: absolute;
+  width: 842px;
+  height: 999px;
+  top: -40px;
+  left: 0;
+  object-fit: cover;
+}
+
+.ligtas-banko .checker {
+  position: absolute;
+  width: 887px;
+  height: 969px;
+  top: -250px;
+  left: 525px;
+  background-color: #ffffff;
+  border-radius: 74.37px;
+  overflow: hidden;
+  box-shadow: 0px 4.25px 4.25px #00000066;
+}
+
+.ligtas-banko .banking-application-3 {
+  position: absolute;
+  width: 112px;
+  height: 119px;
+  top: 51px;
+  left: 388px;
+}
+
+.ligtas-banko .text-wrapper {
+  position: absolute;
+  top: 219px;
+  left: 343px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 35px;
+  letter-spacing: 3.5px;
+  line-height: normal;
+}
+
+.ligtas-banko .rectangle {
+  position: absolute;
+  width: 783px;
+  height: 73px;
+  top: 306px;
+  left: 58px;
+  background-color: #ffffff;
+  border-radius: 42.49px;
+  border: 2.66px solid;
+  border-color: #002b5e;
+  box-shadow: 0px 4.25px 4.25px #00000040;
+}
+
+.ligtas-banko .group {
+  position: absolute;
+  width: 290px;
+  height: 90px;
+  top: 680px;
+  left: 240px;
+}
+
+.ligtas-banko .div-wrapper {
+  position: relative;
+  width: 288px;
+  height: 90px;
+  background-color: #002b5e;
+  border-radius: 68.18px;
+}
+
+.ligtas-banko .text-wrapper-2 {
+  position: absolute;
+  top: 25px;
+  left: 60px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 34.1px;
+  letter-spacing: 6.82px;
+  line-height: normal;
+  cursor: pointer; /* Add cursor pointer style to indicate it's clickable */
+}
+
+
+.ligtas-banko .clear {
+  position: absolute;
+  width: 163px;
+  height: 72px;
+  top: 823px;
+  left: 360px;
+}
+
+.ligtas-banko .overlap-2 {
+  position: relative;
+  height: 72px;
+  border-radius: 65.2px;
+}
+
+.ligtas-banko .group-2 {
+  position: absolute;
+  width: 71px;
+  height: 29px;
+  top: 21px;
+  left: 47px;
+}
+
+.ligtas-banko .text-wrapper-3 {
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 19.6px;
+  letter-spacing: 3.91px;
+  line-height: normal;
+}
+
+.ligtas-banko .group-3 {
+  position: absolute;
+  width: 163px;
+  height: 72px;
+  top: 0;
+  left: 0;
+  border-radius: 65.2px;
+  border: 1.3px solid;
+  border-color: #000000;
+}
+
+.ligtas-banko .overlap-wrapper {
+  position: absolute;
+  width: 421px;
+  height: 59px;
+  top: 1087px;
+  left: 751px;
+}
+
+.ligtas-banko .overlap-3 {
+  position: relative;
+  width: 419px;
+  height: 59px;
+}
+
+.ligtas-banko .text-wrapper-4 {
+  position: absolute;
+  width: 260px;
+  top: -280px;
+  left: 30px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 28.7px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.ligtas-banko .banking-application-4 {
+  position: absolute;
+  width: 255px;
+  height: 59px;
+  top: -290px;
+  left: 190px;
+  object-fit: cover;
+}
+
+.ligtas-banko .url-input {
+  position: absolute;
+  width: 100%; /* Make the input box take up the full width of the parent */
+  height: 100%; /* Make the input box take up the full height of the parent */
+  top: 0;
+  left: 0;
+  padding: 20px; /* Add padding to the input box */
+  box-sizing: border-box; /* Include padding and border in the total width and height */
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 24px;
+  border: none; /* Remove default border */
+  outline: none; /* Remove outline on focus */
+  background-color: transparent; /* Make the input box transparent */
+}
+
+.prediction-result {
+  position: absolute;
+  width: 100%; /* Adjust width as needed */
+  top: 400px; /* Adjust top position as needed */
+  left: 0;
+  text-align: center;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 24px;
+}
+
+.ligtas-banko .prediction-result {
+  position: absolute;
+  width: 100%; /* Adjust width as needed */
+  top: 400px; /* Adjust top position as needed */
+  left: 0;
+  text-align: center;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 24px;
+}
+
+.ligtas-banko .top-features {
+  position: absolute;
+  width: 100%; /* Adjust width as needed */
+  top: 490px; /* Adjust top position as needed */
+  left: 0;
+  text-align: center;
+  font-size: 24px;
+}
+
+.ligtas-banko .top-features p {
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 24px;
+}
+
+/* Add the following styles for the top features list */
+.ligtas-banko .top-features ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ligtas-banko .top-features li {
+  margin: 8px 0;
+}
+
+.ligtas-banko .top-features li::before {
+  content: '\2022'; /* Add a bullet point before each list item */
+  color: #000000;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.prediction-result .safe {
+  font-family: "Poppins", Helvetica;
+  font-weight: bold; /* Add this line */
+  color: green; 
+  text-align: center;
+  font-size: 32px;
+}
+
+.prediction-result .phishing {
+  font-family: "Poppins", Helvetica;
+  font-weight: bold; /* Add this line */
+  color: red; 
+  text-align: center;
+  font-size: 32px;
+}
+
