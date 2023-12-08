@@ -10,7 +10,7 @@ comm==0.2.0
 debugpy==1.8.0
 decorator==5.1.1
 executing==2.0.1
-Flask==3.0.0
+flask==3.0.0
 googlesearch-python==1.2.3
 idna==3.4
 ipykernel==6.27.1
