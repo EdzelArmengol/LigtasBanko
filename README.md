@@ -9,6 +9,7 @@ Gaps:
   The Phishing detector model as of now only differentiates the characteristics of both phishing and safe Philippine URL bank links.
   
   Feature Engineering for:
+  
     1. Address Bar Based Features
     2. Domain Based Features
     3. HTML & Javascript Based Features
